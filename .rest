@@ -1,0 +1,30 @@
+// register a new user
+POST http://localhost:3000/user HTTP/1.1
+content-type: application/json
+
+{
+    "name": "alice",
+    "email": "alice@gmail.com"
+}
+
+###
+
+// create a new post
+POST http://localhost:3000/post HTTP/1.1
+content-type: application/json
+
+{
+    "title": "fun fact about postgres",
+    "content": "what you should know about postgres",
+    "authorId":"3ce91291-6494-43b6-99f5-5792ac1455f"
+}
+
+###
+
+// get all users
+GET http://localhost:3000/user HTTP/1.1
+
+###
+
+// run test function
+GET http://localhost:3000/test HTTP/1.1
